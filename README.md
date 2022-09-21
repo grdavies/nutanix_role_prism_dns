@@ -1,7 +1,7 @@
 Nutanix Role for Prism DNS server configuration
 =========
 
-This Ansible role sets the DNS configuration for Prism Element and Prism Central.
+This Ansible role sets the DNS server configuration for Prism Element and Prism Central.
 
 
 Role Variables
@@ -19,8 +19,6 @@ Dependencies
 
 Example Playbook
 ----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
 ```     - hosts: localhost
        gather_facts: false

@@ -1,5 +1,10 @@
 ---
 # tasks file for nutanix_role_prism_dns
+  - name: Import grdavies.nutanix_prism_role_init_api role
+    include_role:
+      name: grdavies.nutanix_role_prism_init_api
+      public: yes
+
   - name: Get current DNS configuration
     uri:
       url: "{{ prism_api_v2 }}/cluster/name_servers"
