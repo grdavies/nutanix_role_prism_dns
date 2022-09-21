@@ -20,18 +20,18 @@ Dependencies
 Example Playbook
 ----------------
 
-```     - hosts: localhost
-       gather_facts: false
-       roles:
-         - role: grdavies.nutanix_role_prism_init_api
-         - role: ../..
-       vars:
-         prism_ip: 10.38.185.37
-         prism_username: admin
-         prism_password: nx2Tech165!
-         prism_dns_server_list:
-           - 8.8.8.8
-           - 8.8.4.4
+```
+- hosts: localhost
+  gather_facts: false
+  roles:
+    - role: grdavies.nutanix_role_prism_dns
+  vars:
+    prism_ip: 10.38.185.37
+    prism_username: admin
+    prism_password: nx2Tech165!
+    prism_dns_server_list:
+      - 8.8.8.8
+      - 8.8.4.4
 ```
 
 
