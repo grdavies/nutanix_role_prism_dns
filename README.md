@@ -1,24 +1,20 @@
-Nutanix Role for Prism DNS server configuration
-=========
+# Nutanix Role for Prism DNS server configuration
 
 This Ansible role sets the DNS server configuration for Prism Element and Prism Central.
 
 
-Role Variables
---------------
+## Role Variables
 
 | Variable                 | Required | Default | Choices                                                                         | Comments                                                                                                                                           |
 |--------------------------|----------|---------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | validate_certs           | no       | no      |                                                                                 | Whether to check if Prism UI certificates are valid.                                                                                               |
 | prism_dns_server_list    | yes      | []      |                                                                                 | Provide a list of DNS server IP addresses; ["8.8.8.8", "8.8.4.4"].                                                                                 |
 
-Dependencies
-------------
+## Dependencies
 
 - grdavies.nutanix_role_prism_init_api
 
-Example Playbook
-----------------
+## Example Playbook
 
 ```
 - hosts: localhost
@@ -34,13 +30,10 @@ Example Playbook
       - 8.8.4.4
 ```
 
-
-License
--------
+## License
 
 See LICENSE.md
 
-Author Information
-------------------
+## Author Information
 
 Ross Davies
