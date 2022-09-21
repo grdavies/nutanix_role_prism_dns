@@ -1,6 +1,6 @@
 galaxy_info:
   author: Ross Davies
-  description: Role to configure DNS servers configured on Nutanix Prism Element or Nutanix Prism Central
+  description: Role to configure DNS servers for Nutanix Prism Element or Nutanix Prism Central
   company: N/A
 
   # If the issue tracker for your role is not on github, uncomment the
