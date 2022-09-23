@@ -22,9 +22,9 @@ This Ansible role sets the DNS server configuration for Prism Element and Prism 
   roles:
     - role: grdavies.nutanix_role_prism_dns
   vars:
-    prism_ip: 10.38.185.37
-    prism_username: admin
-    prism_password: nx2Tech165!
+    nutanix_host: 10.38.185.37
+    nutanix_password: admin
+    nutanix_username: nx2Tech165!
     prism_dns_server_list:
       - 8.8.8.8
       - 8.8.4.4
