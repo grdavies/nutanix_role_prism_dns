@@ -5,8 +5,9 @@
     - role: ../..
   vars:
     nutanix_host: 10.38.185.37
-    nutanix_password: admin
-    nutanix_username: nx2Tech165!
-    prism_dns_server_list:
+    nutanix_username: admin
+    nutanix_password: nx2Tech165!
+    # nutanix_debug: True
+    nutanix_dns_server_list:
       - 8.8.8.8
       - 8.8.4.4

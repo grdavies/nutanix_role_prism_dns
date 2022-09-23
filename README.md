@@ -8,11 +8,11 @@ This Ansible role sets the DNS server configuration for Prism Element and Prism 
 | Variable                 | Required | Default | Choices                                                                         | Comments                                                                                                                                           |
 |--------------------------|----------|---------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | validate_certs           | no       | no      |                                                                                 | Whether to check if Prism UI certificates are valid.                                                                                               |
-| prism_dns_server_list    | yes      | []      |                                                                                 | Provide a list of DNS server IP addresses; ["8.8.8.8", "8.8.4.4"].                                                                                 |
+| nutanix_dns_server_list  | yes      | []      |                                                                                 | Provide a list of DNS server IP addresses; ["8.8.8.8", "8.8.4.4"].                                                                                 |
 
 ## Dependencies
 
-- grdavies.nutanix_role_prism_init_api
+- grdavies.nutanix_role_nutanix_init_api
 
 ## Example Playbook
 
@@ -20,12 +20,12 @@ This Ansible role sets the DNS server configuration for Prism Element and Prism 
 - hosts: localhost
   gather_facts: false
   roles:
-    - role: grdavies.nutanix_role_prism_dns
+    - role: grdavies.nutanix_role_nutanix_dns
   vars:
     nutanix_host: 10.38.185.37
     nutanix_password: admin
     nutanix_username: nx2Tech165!
-    prism_dns_server_list:
+    nutanix_dns_server_list:
       - 8.8.8.8
       - 8.8.4.4
 ```

@@ -1,4 +1,4 @@
 ---
-# defaults file for nutanix_role_prism_dns
-  prism_dns_server_list: []
+# defaults file for nutanix_role_nutanix_dns
+  nutanix_dns_server_list: []
   validate_certs: no
